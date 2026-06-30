@@ -708,7 +708,7 @@ img {
   .ph-hero-title { font-size: 2.6rem; }
   .ph-hero-right { grid-template-rows: 200px 200px; }
 
-  .ph-btn{ margin-bottom: 7%;}
+  .ph-btn{ margin-bottom: 9%; margin-right: 8%;}
 
   .ph-section { padding: 3rem 1.2rem; }
   .ph-divider { margin: 0 1.2rem; }
