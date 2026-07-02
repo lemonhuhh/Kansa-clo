@@ -1,0 +1,142 @@
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+ 
+.ph-about-hero {
+  background: var(--deep);
+  padding: 5rem 2.5rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.ph-about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(../assets/store.png) center / cover;
+  opacity: 0.25;
+}
+ 
+.ph-about-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+ 
+.ph-about-hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.6rem;
+  font-weight: 300;
+  color: #FAF6F0;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+ 
+.ph-about-hero-title em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+ 
+.ph-about-hero-sub {
+  font-size: 0.85rem;
+  color: rgba(250, 246, 240, 0.5);
+  letter-spacing: 0.05em;
+  max-width: 48ch;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+ 
+/* Stats band */
+.ph-about-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--warm);
+  padding: 3rem 2.5rem;
+  border-top: 1px solid var(--border-gold);
+  border-bottom: 1px solid var(--border-gold);
+  gap: 0;
+}
+ 
+.ph-about-stat {
+  text-align: center;
+  padding: 0 4rem;
+}
+ 
+.ph-about-stat-sep {
+  width: 0.5px;
+  height: 3rem;
+  background: var(--border-gold);
+}
+ 
+.ph-about-stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--text-dark);
+}
+
+.ph-about-stat-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 0.2rem;
+}
+
+
+/* Team */
+.ph-team-section {
+  background: var(--warm);
+}
+ 
+.ph-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+ 
+.ph-team-card {
+  background: var(--cream);
+  border: 0.5px solid var(--border-gold);
+  overflow: hidden;
+  cursor: default;
+}
+ 
+.ph-team-img {
+  height: 300px;
+  overflow: hidden;
+}
+ 
+.ph-team-img img {
+  transition: transform 0.5s ease;
+}
+ 
+.ph-team-card:hover .ph-team-img img {
+  transform: scale(1.05);
+}
+ 
+.ph-team-info {
+  padding: 1rem 1.1rem 1.2rem;
+  border-top: 0.5px solid var(--border-gold);
+}
+ 
+.ph-team-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+ 
+.ph-team-role {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (max-width: 768px){
+  .ph-team-grid{grid-template-columns: 1fr;}
+}

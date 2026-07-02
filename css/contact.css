@@ -15,7 +15,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url(/assets/store.png) center / cover;
+  background: url(../assets/store.png) center / cover;
   opacity: 0.3;
 }
  
